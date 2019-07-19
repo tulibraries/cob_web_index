@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "blog",
+      "attributes": {
+        "label": "Library news",
+        "updated_at": "2019-07-15T13:19:25.438-04:00",
+        "title": "Library news",
+        "base_url": "https://sites.temple.edu/librarynews/",
+        "feed_path": "feed",
+        "last_sync_date": "2019-07-15T13:19:25.437-04:00",
+        "public_status": true
+      }
+    },
+    {
+      "id": "2",
+      "type": "blog",
+      "attributes": {
+        "label": "Digital Scholarship Center",
+        "updated_at": "2019-07-15T13:19:26.352-04:00",
+        "title": "Digital Scholarship Center",
+        "base_url": "https://sites.temple.edu/tudsc/",
+        "feed_path": "/feed",
+        "last_sync_date": "2019-07-15T13:19:26.348-04:00",
+        "public_status": true
+      }
+    }
+  ]
+}
