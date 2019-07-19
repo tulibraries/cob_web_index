@@ -12,10 +12,14 @@ module CobWebIndex
 
       if ingest_path
         ingest_string = open(ingest_path).read
+        ingest_string = JSON.parse(ingest_string).fetch("data").to_json
       end
 
       indexer.writer.delete(query: "*:*")
       indexer.process(StringIO.new(ingest_string))
+    end
+
+    def self.pull
     end
   end
 end
