@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "id": "98",
+      "type": "event",
+      "attributes": {
+        "label": "Publication Reputation: Publishing in Legitimate Journals",
+        "updated_at": "2019-07-17T16:06:39.787-04:00",
+        "image": "https://web.qa.tul-infra.page/events/98/image/large",
+        "thumbnail_image": "https://web.qa.tul-infra.page/events/98/image/thumbnail",
+        "title": "Publication Reputation: Publishing in Legitimate Journals",
+        "description": "<p>Predatory publishers run online journals that abuse the open access model and will accept almost any paper submitted. They offer little in terms of copy editing or peer review. Journal websites may include false information about impact factors, editorial board members, and other affiliations. This session will provide an overview of the problem, and will teach you how to identify and avoid predatory biomedical journals and predatory conferences. Suggestions for finding reliable journals in which to publish are included. Please contact the workshop organizer if you wish to register a group of 15 or more.</p>\n<p>\tWorkshop is open to: undergraduate and graduate students, faculty, staff, and Temple Hospital staff.</p>\n<p>\tRegister at <a href=\"https://ginsburgstudy.temple.edu/calendar/events/publication\">https://ginsburgstudy.temple.edu/calendar/events/publication</a><br>\n\t </p>",
+        "start_time": "2019-07-23T12:00:00.000-04:00",
+        "end_time": "2019-07-23T13:00:00.000-04:00",
+        "cancelled": false,
+        "registration_status": true,
+        "registration_link": null,
+        "content_hash": "6887231f44f5c646ef8c9618e918d114f9795c6a",
+        "alt_text": "typewriter",
+        "ensemble_identifier": null,
+        "tags": "library workshops, Health Sciences Libraries",
+        "all_day": false,
+        "space": "Room 248",
+        "address1": "3500 N Broad St.",
+        "address2": "Philadelphia, Philadelphia  19140",
+        "contact_name": "Courtney Smerz",
+        "contact_email": "courtney.smerz@temple.edu",
+        "contact_phone": "2152043594"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/events/98"
+      }
+    },
+    {
+      "id": "99",
+      "type": "event",
+      "attributes": {
+        "label": "Fundamentals of Graphic Medicine",
+        "updated_at": "2019-07-17T16:06:40.099-04:00",
+        "image": "https://web.qa.tul-infra.page/events/99/image/large",
+        "thumbnail_image": "https://web.qa.tul-infra.page/events/99/image/thumbnail",
+        "title": "Fundamentals of Graphic Medicine",
+        "description": "<p>\"Graphic medicine is the use of comics to tell personal stories of illness or health\" (National Library of Medicine). These stories can be used in patient care, to educate medical students, or as an exercise for care providers to learn empathy and compassion. Participants will review the uses of comic book art as a method of graphic medicine, as well as fundamentals of art techniques, such as lines, curves, strokes, shading, and inking. Participants will also analyze proportional relationships in drawing basic human anatomy. There will be hands-on activities for the beginner artist. Please contact the workshop organizer if you wish to register a group of 15 or more.</p>\n<p>\tWorkshop is open to: undergraduate and graduate students, faculty, staff, and Temple Hospital staff.</p>\n<p>\tRegister at <a href=\"https://ginsburgstudy.temple.edu/calendar/events/graphicmed\">https://ginsburgstudy.temple.edu/calendar/events/graphicmed</a><br>\n\t </p>",
+        "start_time": "2019-07-24T12:00:00.000-04:00",
+        "end_time": "2019-07-24T13:00:00.000-04:00",
+        "cancelled": false,
+        "registration_status": true,
+        "registration_link": null,
+        "content_hash": "9e65acb7c3aeecbe79be18d91cade4eab60f192a",
+        "alt_text": "assorted coloring pencils",
+        "ensemble_identifier": null,
+        "tags": "library workshops, Health Sciences Libraries",
+        "all_day": false,
+        "space": "Innovation Space",
+        "address1": "3500 N Broad St.",
+        "address2": "Philadelphia, Philadelphia  19140",
+        "contact_name": "Patrick Lyons",
+        "contact_email": "patrick.lyons@temple.edu",
+        "contact_phone": "2157074953"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/events/99"
+      }
+    }
+  ]
+}

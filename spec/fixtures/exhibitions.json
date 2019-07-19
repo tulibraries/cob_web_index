@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": "2",
+      "type": "exhibition",
+      "attributes": {
+        "label": "Test exhibit 2",
+        "updated_at": "2019-01-23T08:24:42.570-05:00",
+        "title": "Test exhibit 2",
+        "description": "SLkdjf",
+        "start_date": "2019-02-01",
+        "end_date": "2019-02-28",
+        "promoted_to_events": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/exhibitions/2"
+      }
+    },
+    {
+      "id": "1",
+      "type": "exhibition",
+      "attributes": {
+        "label": "A Long Separation",
+        "updated_at": "2019-07-11T15:15:30.202-04:00",
+        "title": "A Long Separation",
+        "description": "People divided from family in North Korea since the Korean War",
+        "start_date": "2019-01-07",
+        "end_date": "2019-08-30",
+        "promoted_to_events": true
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/exhibitions/1"
+      }
+    }
+  ]
+}

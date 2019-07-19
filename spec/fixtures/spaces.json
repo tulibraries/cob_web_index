@@ -1,0 +1,531 @@
+{
+  "data": [
+    {
+      "id": "2",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Information Desk",
+        "updated_at": "2019-06-28T08:51:27.418-04:00",
+        "name": "Ginsburg Information Desk",
+        "description": "<p>The Information Desk provides access to all Ginsburg Library’s resources. Study rooms, books, technology and media can be checked out at the Information Desk.  IT and reference services are available as well</p>",
+        "hours": "",
+        "accessibility": "Anyone entering the Medical Education and Research Building must present ID at the main security desk before moving on to the library.  Alumni, guests and those in need of health-related information are welcome to use the Libraries, but must adhere to the visitor policy.  \r\n",
+        "phone_number": "2157072665",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/2"
+      }
+    },
+    {
+      "id": "4",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Room 246a",
+        "updated_at": "2019-01-15T11:15:22.658-05:00",
+        "name": "Ginsburg Room 246a",
+        "description": "<p>The room is suitable for small groups/meetings. It ahs a computer with project capabilities, a project screen and internet access. There is a laptop connection for the project. It is possible to change the configuration of most of the furniture.</p>",
+        "hours": "",
+        "accessibility": "Health Science Center faculty and staff should contact library staff at the Ginsburg Information Desk to schedule this room.",
+        "phone_number": "2157072665",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/4"
+      }
+    },
+    {
+      "id": "5",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Computer lab room 248",
+        "updated_at": "2019-01-15T11:15:37.186-05:00",
+        "name": "Ginsburg Computer lab room 248",
+        "description": "<p>The room is a computer classroom that seats 32. It has a computer with project capabilities, two projection screens and internet access. There is a laptop connection.</p>",
+        "hours": "",
+        "accessibility": "Health Science Center faculty and staff should contact library staff at the Ginsburg Information Desk to schedule this room.",
+        "phone_number": "2157072665",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/5"
+      }
+    },
+    {
+      "id": "6",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Room 243",
+        "updated_at": "2019-01-15T11:15:47.776-05:00",
+        "name": "Ginsburg Room 243",
+        "description": "<p>The room is suitable for groups/meeting of us to 26 people. It has a computer with projection capabilities, a projection screen and internet access. There is a laptop connection for the projector. It is possible to change the configuration of the furniture.</p>",
+        "hours": "",
+        "accessibility": "Health Science Center faculty and staff should contact library staff at the Ginsburg Information Desk to schedule the room.",
+        "phone_number": "2157072665",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/6"
+      }
+    },
+    {
+      "id": "7",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Innovation Space",
+        "updated_at": "2019-06-24T15:03:07.076-04:00",
+        "name": "Ginsburg Innovation Space",
+        "description": "<p>The Library’s Innovation Space includes 3 complimentary work zones – fabrication, consultation and collaboration/presentation. It houses a selection of 3D printers and scanners<em>, </em>virtual and augmented reality systems, high-end laptops, IT enabled conversation booths, and a convertible IT service desk/teaching podium.</p>",
+        "hours": "innovation",
+        "accessibility": "The Innovation Space is located on the first level of the Ginsburg Library. It is always staffed by a trained student worker or librarian.",
+        "phone_number": "2157077437",
+        "email": "ginsin3D@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/7"
+      }
+    },
+    {
+      "id": "8",
+      "type": "space",
+      "attributes": {
+        "label": "Krausz Information Desk",
+        "updated_at": "2018-10-01T16:11:17.438-04:00",
+        "name": "Krausz Information Desk",
+        "description": "<p>The Information Desk provides access to all Krausz Library's resources. Books and technology can be checked out at the Information Desk. Reference services are available as well.</p>",
+        "hours": null,
+        "accessibility": "Anyone entering the building must present ID at the main security desk. For security purposes, all students, faculty, staff and visitors are required to wear their Temple University identification badge at all times while in the library and must present identification when asked by a library staff member",
+        "phone_number": "2156255205",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/8"
+      }
+    },
+    {
+      "id": "9",
+      "type": "space",
+      "attributes": {
+        "label": "Ambler Service Desk",
+        "updated_at": "2019-01-15T11:16:19.900-05:00",
+        "name": "Ambler Service Desk",
+        "description": "<p>The combined service desk (reference, circulation/reserves) is located close to the entrance of the library. Here, you can get questions answered and borrow/return materials. If an instructor has put a book or DVD on reserve, it will be here.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2674688648",
+        "email": "tulamblr@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/9"
+      }
+    },
+    {
+      "id": "26",
+      "type": "space",
+      "attributes": {
+        "label": "Charles Library large group study rooms",
+        "updated_at": "2019-06-14T10:37:12.621-04:00",
+        "name": "Charles Library large group study rooms",
+        "description": "<p>Charles Library has six large group study rooms that can accommodate anywhere from 6-14 people. These rooms have a display screen and a dedicated computer in each room. You can also connect your own computer, tablet or smartphone device to the display using the KramerBox wireless connection. </p>\r\n<p>Room 405, which can accommodate 14 people, also has a built-in phone line. </p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/26"
+      }
+    },
+    {
+      "id": "10",
+      "type": "space",
+      "attributes": {
+        "label": "Charles Library 3rd floor staff area",
+        "updated_at": "2019-07-12T08:54:10.232-04:00",
+        "name": "Charles Library 3rd floor staff area",
+        "description": "<p>The third floor staff area will comprise staff from LTS, LTD, LRS and Library administration.</p>",
+        "hours": "",
+        "accessibility": "This space will be open during business hours. All guests should see the receptionist.",
+        "phone_number": "2152048231",
+        "email": "asktulib@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/10"
+      }
+    },
+    {
+      "id": "14",
+      "type": "space",
+      "attributes": {
+        "label": "Charles L. Blockson Reading Room",
+        "updated_at": "2019-07-18T09:13:45.546-04:00",
+        "name": "Charles L. Blockson Reading Room",
+        "description": "<p class=\"p1\">Access to research materials is available on-site only. Materials in the collection do not circulate. Photocopying, scanning and/or photographing of most materials is allowed, if the material is in a good condition.</p>\r\n<p class=\"p1\">To use special collections (i.e. photographs and manuscripts) users are advised to arrange appointments.</p>\r\n<p class=\"p1\">The collection is open to the public and group tours are available by appointment.</p>\r\n<p class=\"p1\">For tour reservations call (215) 204-6632.</p>\r\n<p class=\"p1\"> </p>",
+        "hours": "blockson",
+        "accessibility": "",
+        "phone_number": "2152046849",
+        "email": "aberhanu@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/14"
+      }
+    },
+    {
+      "id": "13",
+      "type": "space",
+      "attributes": {
+        "label": "Charles Library 2nd floor staff area",
+        "updated_at": "2019-07-12T08:56:44.643-04:00",
+        "name": "Charles Library 2nd floor staff area",
+        "description": "<p>Many of the technical services work will happen in the 2nd floor staff area in the Charles Library. </p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152040744",
+        "email": "asktulib@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/13"
+      }
+    },
+    {
+      "id": "1",
+      "type": "space",
+      "attributes": {
+        "label": "One Stop Assistance Desk",
+        "updated_at": "2019-07-18T10:30:16.758-04:00",
+        "name": "One Stop Assistance Desk",
+        "description": "<p>Coming soon!</p>",
+        "hours": "service_zone",
+        "accessibility": "",
+        "phone_number": "2152048212",
+        "email": "asktulibrary@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/1"
+      }
+    },
+    {
+      "id": "16",
+      "type": "space",
+      "attributes": {
+        "label": "Loretta C. Duckworth Scholars Studio",
+        "updated_at": "2019-05-02T15:16:28.420-04:00",
+        "name": "Loretta C. Duckworth Scholars Studio",
+        "description": "<p>The Loretta C. Duckworth Scholars Studio is a space for collaborative work in areas of research and technology; digital humanities, digital arts, gaming, making, big data and others. It contains technical equipment and software for a variety of activities including textual analysis, working with big data, working in and creating 3D spaces, geospatial technology, games and visualizations. </p>\r\n<h3>Services</h3>\r\n<p>Staff in the LCDSS are knowledgeable in a many of these areas and can assist you or your class in getting started or working with these technologies.  The LCDSS also provides recommendations and support for project design and project management of digital projects.</p>\r\n<h3>Resources</h3>\r\n<p>An open and configurable area for group work and making activities is available as well as a large visualization room and two smaller private group breakout rooms all reside within the LCDSS. </p>\r\n<h3>Workshops</h3>\r\n<p>Don't miss out on our <a href=\"https://sites.temple.edu/tudsc/workshops/\">2018 Fall Workshops </a>on a wide range of methods and skillsets, from 3D modeling to 360 video, data management to mapping, critical digital studies and zine-making!</p>",
+        "hours": "scholars_studio",
+        "accessibility": "",
+        "phone_number": "2152040744",
+        "email": "digitalscholarship@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/16"
+      }
+    },
+    {
+      "id": "17",
+      "type": "space",
+      "attributes": {
+        "label": "Law Library Information Desk",
+        "updated_at": "2019-01-10T09:46:59.095-05:00",
+        "name": "Law Library Information Desk",
+        "description": "<p>The Temple University Beasley School of Law Library has a long history as a research library and as a service-oriented facility to the Law School. It survived a fire in 1972 at which time students, staff and other members of the Temple community passed books out of the burning building until it became too dangerous and they were ordered to stop. They managed to save a large number of rare and valuable volumes, but more than 150,000 books were destroyed. The library has since that time restored and enriched its collection.</p>\r\n<p>The collection is particularly strong in 18th and 19th century Anglo-American monographs. The addition of the Rawle Collection gives Temple Law Library a special character. The library also has a unique collection of African materials.</p>\r\n<p>Part of the collection is in closed stacks behind the Information Desk and must be accessed through Information Desk personnel. In the closed stacks are reference materials, the reserve collection, copies of past exams, most of the monographs, rare books, unbound periodicals. The collection is, for the most part, classified in the Library of Congress Classification and monographs must be requested by call number.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152045819",
+        "email": "tulawlib@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/17"
+      }
+    },
+    {
+      "id": "20",
+      "type": "space",
+      "attributes": {
+        "label": "Cafe",
+        "updated_at": "2019-02-12T12:17:11.080-05:00",
+        "name": "Cafe",
+        "description": "<p>eat drink</p>",
+        "hours": "cafe",
+        "accessibility": "",
+        "phone_number": "",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/20"
+      }
+    },
+    {
+      "id": "23",
+      "type": "space",
+      "attributes": {
+        "label": "SCRC Reading Room",
+        "updated_at": "2019-06-26T14:24:36.544-04:00",
+        "name": "SCRC Reading Room",
+        "description": "<p class=\"p1\">The SCRC Reading Room is typically open from 8:30am - 5:30pm, Monday through Friday. Hours can be verified prior to your visit by viewing the <a href=\"https://library.temple.edu/about/hours/scrc\"><span class=\"s1\">SCRC calendar</span></a>.</p>\r\n<p class=\"p1\">Any collection of unique material requires special handling. The following policies and procedures are designed to provide you with the greatest possible access to the materials at the SCRC while protecting and preserving those materials for future use.</p>\r\n<h3 class=\"p1\">Protection, Care and Handling of Materials</h3>\r\n<ul>\r\n<li class=\"p1\">Food, beverages, and tobacco are not allowed in the reading room.</li>\r\n<li class=\"p1\">Use only pencil and paper or laptop computer for taking notes. </li>\r\n<li class=\"p1\">Use only one box of records or three printed items at a time.</li>\r\n<li class=\"p1\">Remove one folder at a time from the box. </li>\r\n<li class=\"p1\">Maintain the existing sequence of records; if materials within the folder appear to be out of order, please alert a staff member rather than rearranging the folder contents.</li>\r\n<li class=\"p1\">Handle loose sheets or bound pages by their edges and avoid touching the surface as much as possible.</li>\r\n<li class=\"p1\">Support the spines of rare or fragile books (using foam supports provided by staff).</li>\r\n<li class=\"p1\">The staff may furnish gloves for handling photographs and other especially vulnerable items. </li>\r\n<li class=\"p1\">Do not take notes on top of archival materials or holding them in ways that will tear, fold, or otherwise damage them.</li>\r\n</ul>\r\n<h3 class=\"p1\">Administrative Matters</h3>\r\n<p class=\"p1\">Out of respect for fellow researchers, please silence all cell phones and pagers in the reading room, and take extended phone conversations outside of the reading room. All briefcases, laptop cases, book bags, handbags, books, newspapers, coats, and other personal belongings must be left in the lockers or on the coat rack. Personal materials used in the reading room may be searched when you leave. The reading room is monitored by security cameras at all times.</p>\r\n<h3 class=\"p1\">Returning and Reshelving Material</h3>\r\n<p class=\"p1\">Before leaving the Reading Room, please return all material to the reference staff. You may ask to have material placed “on hold” for up to two weeks from the last time used.</p>\r\n<p class=\"p1\">We appreciate your help in ensuring the long-term preservation of these unique materials.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048257",
+        "email": "scrc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/23"
+      }
+    },
+    {
+      "id": "25",
+      "type": "space",
+      "attributes": {
+        "label": "Charles Library small group study rooms",
+        "updated_at": "2019-07-15T15:30:13.011-04:00",
+        "name": "Charles Library small group study rooms",
+        "description": "<p>Small group study rooms are located throughout the third and fourth floors of Charles Library.</p>\r\n<p><strong>Capacity: </strong>4-6 people</p>\r\n<p>Each room contains a table, chairs, and a flat screen display. Connect your computer, tablet, or smartphone to the display using the Kramer Box wireless connection.</p>\r\n<p>If you need a hard-wired connection, please borrow an HDMI cable from the One Stop Service Desk on the first floor. </p>\r\n<p>Small group study room numbers: 327, 383, 384, 386, 403, 404, 411, 412, 413, 414, 415, 416, 417, 418, 422, 424, 426, 427</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152040744",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/25"
+      }
+    },
+    {
+      "id": "21",
+      "type": "space",
+      "attributes": {
+        "label": "Student Success Center",
+        "updated_at": "2019-07-18T12:53:16.417-04:00",
+        "name": "Student Success Center",
+        "description": "<p>The Student Success Center offers several academic support services and programs for students. They are conventiently located on the 2nd and 3rd floors of Charles Library. Visit their website for more information. </p>",
+        "hours": "success_center",
+        "accessibility": "",
+        "phone_number": "2152040702",
+        "email": "ssc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/21"
+      }
+    },
+    {
+      "id": "11",
+      "type": "space",
+      "attributes": {
+        "label": "Special Collections Research Center",
+        "updated_at": "2019-07-18T12:23:25.837-04:00",
+        "name": "Special Collections Research Center",
+        "description": "<p>The SCRC is the principal repository for and steward of the Libraries’ rare books, manuscripts, archives and University records. We collect, preserve, and make accessible primary resources and rare or unique materials, to stimulate, enrich, and support research, teaching, learning, and administration at Temple University. SCRC makes these resources available to the Temple community and a broad constituency as part of the University's engagement with the larger community of scholars and independent researchers.</p>\r\n<p>While we are constantly striving to increase the discoverability of our materials, this website only covers a small portion of our actual collections and holdings--which is over 90,000 linear feet, many terabytes, and growing. If you don't find what you are looking for on our website, we encourage you to visit, call or e-mail us.</p>",
+        "hours": "scrc",
+        "accessibility": "Researcher registration and requests to use SCRC materials can now be made using your SCRC Researcher Account.",
+        "phone_number": "2152048257",
+        "email": "asktulib@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/11"
+      }
+    },
+    {
+      "id": "28",
+      "type": "space",
+      "attributes": {
+        "label": "Makerspace",
+        "updated_at": "2019-07-10T09:56:57.668-04:00",
+        "name": "Makerspace",
+        "description": "<p>This makerspace provides access for Temple University faculty, staff, and students to fabrication equipment such as laser cutters, 3D printing, and CNC machines. The space also offers equipment for working on other making projects, including equipment for working with electronics.  You and/or your group must complete an equipment training and a safety training in order to use this space.  The makerspace may be reserved for classes, workshops, and by groups following communication with the Loretta C. Duckworth Scholars' Studio staff. </p>",
+        "hours": "scholars_studio",
+        "accessibility": "",
+        "phone_number": "2152043446",
+        "email": "digitalscholarship@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/28"
+      }
+    },
+    {
+      "id": "36",
+      "type": "space",
+      "attributes": {
+        "label": "Computer lab",
+        "updated_at": "2019-07-12T09:26:30.833-04:00",
+        "name": "Computer lab",
+        "description": "<p><span>This 16 station computer lab is designed for work in digital scholarship including, but not limited to, data visualization, virtual reality, augmented reality, GIS, textual analysis, and gaming.  Each of the 16 stations include one computer and seats for up to 3 people. Please note that this lab exists within a publicly accessible space that cannot be closed off and will not be private. The workstations may be reserved for classes, workshops, and by groups following communication with the Loretta C. Duckworth Scholars' Studio staff.</span></p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152043435",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/36"
+      }
+    },
+    {
+      "id": "34",
+      "type": "space",
+      "attributes": {
+        "label": "Immersive visualization studio",
+        "updated_at": "2019-07-14T15:00:04.921-04:00",
+        "name": "Immersive visualization studio",
+        "description": "<p>This sound dampened room is designed for up to 10 people to simultaneously participate in virtual reality and augmented reality activities.  The space has an omni-directional treadmill and VR headsets and laptops that can be checked out from the Loretta C. Duckworth Scholars' Studio Service Desk. The VR Lab may be reserved for classes, workshops, and by groups following communication with the Loretta C. Duckworth Scholars' Studio staff. </p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152043435",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/34"
+      }
+    },
+    {
+      "id": "32",
+      "type": "space",
+      "attributes": {
+        "label": "Terrace",
+        "updated_at": "2019-07-18T15:58:48.796-04:00",
+        "name": "Terrace",
+        "description": "<p>If you are interested in reserving this room for a special event, please contact library administration at 215-204-8231.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048231",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/32"
+      }
+    },
+    {
+      "id": "35",
+      "type": "space",
+      "attributes": {
+        "label": "Innovation tech sandbox",
+        "updated_at": "2019-07-14T15:00:24.318-04:00",
+        "name": "Innovation tech sandbox",
+        "description": "<p> This room contains 6 round tables with seating for 24 and has 2 wall mounted monitors.  This space is suitable for brainstorming about digital scholarship projects, holding workshops, and conducting tabletop gaming exercises.  Please note that the Innovation Space exists within a publicly accessible space that cannot be closed off and will not be private. The workstations may be reserved for classes, workshops, and by groups following communication with the Loretta C. Duckworth Scholars' Studio staff.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152043435",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/35"
+      }
+    },
+    {
+      "id": "30",
+      "type": "space",
+      "attributes": {
+        "label": "3rd floor open reading area",
+        "updated_at": "2019-07-11T08:25:10.971-04:00",
+        "name": "3rd floor open reading area",
+        "description": "<p>If you are interested in reserving this room for a special event, please contact library administration at 215-204-8231.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048231",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/30"
+      }
+    },
+    {
+      "id": "31",
+      "type": "space",
+      "attributes": {
+        "label": "24/7 study area",
+        "updated_at": "2019-07-15T15:24:10.238-04:00",
+        "name": "24/7 study area",
+        "description": "<p>To reserve this space for a special event, contact library administration at <strong>215-204-8231</strong>.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048231",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/31"
+      }
+    },
+    {
+      "id": "27",
+      "type": "space",
+      "attributes": {
+        "label": "4th floor quiet reading room",
+        "updated_at": "2019-07-16T09:28:07.916-04:00",
+        "name": "4th floor quiet reading room",
+        "description": "<p>In search of a quiet place to study in Charles Library? Visit the Fourth Floor Quiet Reading Room, the dedicated and enclosed quiet zone that allows you to spread out and dig into projects requiring dedicated concentration. While you study, enjoy the view of the Bell Tower at the center of Main Campus.</p>\r\n<p>If you are interested in reserving this room for a special event, please contact library administration at 215-204-8231.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048231",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/27"
+      }
+    },
+    {
+      "id": "33",
+      "type": "space",
+      "attributes": {
+        "label": "Programming and event space",
+        "updated_at": "2019-07-18T15:57:57.630-04:00",
+        "name": "Programming and event space",
+        "description": "<p>If you are interested in reserving this room for a special event, please contact library administration at 215-204-8231.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152048231",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/33"
+      }
+    },
+    {
+      "id": "29",
+      "type": "space",
+      "attributes": {
+        "label": "4th floor graduate study",
+        "updated_at": "2019-07-18T15:58:28.751-04:00",
+        "name": "4th floor graduate study",
+        "description": "<p>If you are interested in reserving this room for a special event, please contact library administration at 215-204-8231.</p>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2152040744",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/29"
+      }
+    },
+    {
+      "id": "3",
+      "type": "space",
+      "attributes": {
+        "label": "Health Sciences Libraries Study Rooms",
+        "updated_at": "2019-07-17T11:29:40.601-04:00",
+        "name": "Health Sciences Libraries Study Rooms",
+        "description": "<p>The Temple University Health Sciences Libraries are pleased to offer a large number of both large and small group study rooms.</p>\r\n<p>We ask that those using the group study rooms abide by the following guidelines:</p>\r\n<ul>\r\n<li>A Temple University Health Sciences ID card is required to check out a room key.</li>\r\n<li>Small group study rooms are available on a first come, first served basis. Keys will be issued at the circulation desk. These may be used by individuals or groups. [Edited 2/5/15-Room <a href=\"http://ginsburgstudy.temple.edu/\">reservations </a>can be made 24 hours ahead of time for rooms with Mac Minis] </li>\r\n<li>Four hours is the maximum amount of time a room can be signed out. Renewals are allowed during low demand times.</li>\r\n<li>Occupancy in each group study room is limited to the amount of chairs already in the room, no moving/ removing furniture from the rooms.</li>\r\n<li>Rooms should be left clean and in order for the next patrons. This includes cleaning the white boards, picking up trash.</li>\r\n<li>Conversations should be held at a reasonable level.</li>\r\n<li>Learn more about <a href=\"http://guides.temple.edu/content.php?pid=353650&amp;sid=4198822\">technology in study rooms.</a>\n</li>\r\n<li>During busy exam periods, the larger study rooms (seating 6 or more) will be restricted for the use of groups containing 4 individuals or more. Individuals (groups of one) who wish to use a study room will be assigned to a smaller room (seating for 4). </li>\r\n<li>The Library is not responsible for personal property left in rooms.</li>\r\n</ul>",
+        "hours": "",
+        "accessibility": "A Temple University ID is required to check out a room key. Keys are issued at the Information Desk. ",
+        "phone_number": "2157072665",
+        "email": "hsccirc@temple.edu"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/3"
+      }
+    },
+    {
+      "id": "24",
+      "type": "space",
+      "attributes": {
+        "label": "Ginsburg Special Use Rooms",
+        "updated_at": "2019-07-17T11:49:31.232-04:00",
+        "name": "Ginsburg Special Use Rooms",
+        "description": "<p>Rooms are available on a first come, first serve basis. <strong>1 hour use</strong>. Keys are checked out at the circulation service desk. A Temple University Health Sciences ID is required.</p>\r\n<h2>Meditation Room (041A)</h2>\r\n<ul>\r\n<li>May be used by individuals or groups.</li>\r\n<li>Not for studying or sleeping.</li>\r\n<li>Food and Beverages are not permitted.</li>\r\n<li>Burning of any material, such as incense or candles, is not premitted due to safety concerns.</li>\r\n<li>Silence electronic devices. Earbuds are recommended if audio is used.</li>\r\n<li>Be respectful of others, keep the room clean and do not leave any personal belongings.</li>\r\n</ul>\r\n<h2>Lactation Room (064)</h2>\r\n<ul>\r\n<li>Our lactation room provides a secure environment free from intrusion and shielded from public view. Nursing mothers will need to provide their own breast pumps.</li>\r\n</ul>",
+        "hours": "",
+        "accessibility": "",
+        "phone_number": "2157072665",
+        "email": null
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/spaces/24"
+      }
+    }
+  ]
+}
