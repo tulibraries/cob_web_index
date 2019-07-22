@@ -23,14 +23,12 @@ class App
     c.desc "Ingest files into SOLR_URL using the web content traject config"
     c.action do |global_options, options, args|
 
-
-      ops = !args.empty? ? { ingest_path: args[0] } :
-        { ingest_string: CobWebIndex::CLI.pull }
-
-      if options["use-fixtures"]
+      if args.empty?
+        CobWebIndex::CLI.pull
+      elsif options["use-fixtures"]
         CobWebIndex::CLI.ingest_fixtures
       else
-        CobWebIndex::CLI.ingest(ops)
+        CobWebIndex::CLI.ingest(ingest_path: args[0])
       end
     end
   end
