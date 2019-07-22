@@ -11,7 +11,7 @@ module CobWebIndex
       indexer.load_config_file("#{File.dirname(__FILE__)}/cob_web_index/indexer_config.rb")
 
       if ingest_path
-        ingest_string = open(ingest_path).read
+        ingest_string = open_read(ingest_path)
         ingest_string = JSON.parse(ingest_string).fetch("data").to_json
       end
 
@@ -20,6 +20,16 @@ module CobWebIndex
     end
 
     def self.pull
+    end
+
+    def self.open_read(url)
+      if ENV["WEB_CONTENT_BASIC_AUTH_USER"] &&  ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
+        user = ENV["WEB_CONTENT_BASIC_AUTH_USER"]
+        password = ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
+        open(url, http_basic_authentication: [user, password]).read
+      else
+        open(url).read
+      end
     end
   end
 end

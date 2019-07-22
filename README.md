@@ -32,6 +32,12 @@ cob_web_index ingest $path_to_file
 
 Note also that `$path_to_file` is an optional argument. If not provided then by default ingest will attempt to download the latest website dataset and import that.
 
+### Basic Auth Usage
+
+If endpoint url has basic auth enabled, set the following environment variables:
+* WEB_CONTENT_BASIC_AUTH_USER
+* WEB_CONTENT_BASIC_AUTH_PASSWORD
+
 
 ## Development
 
