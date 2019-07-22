@@ -31,5 +31,13 @@ module CobWebIndex
         open(url).read
       end
     end
+
+    def self.ingest_fixtures
+      fixtures = "#{File.dirname(__FILE__)}/../spec/fixtures/*.json"
+
+      Dir.glob(fixtures).each do |file|
+        ingest(ingest_path: file)
+      end
+    end
   end
 end

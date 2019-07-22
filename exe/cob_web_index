@@ -28,10 +28,10 @@ class App
         { ingest_string: CobWebIndex::CLI.pull }
 
       if options["use-fixtures"]
-        ops.merge!(ingest_path: "#{File.dirname(__FILE__)}/../spec/fixtures/databases.json")
+        CobWebIndex::CLI.ingest_fixtures
+      else
+        CobWebIndex::CLI.ingest(ops)
       end
-
-      CobWebIndex::CLI.ingest(ops)
     end
   end
 
