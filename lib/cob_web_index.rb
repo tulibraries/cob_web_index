@@ -3,8 +3,12 @@
 require "cob_web_index/version"
 require "traject"
 require "httparty"
+require "pry"
 
 module CobWebIndex
+  class WebContentError < StandardError
+  end
+
   module CLI
     def self.ingest(ingest_path: nil, ingest_string: "")
       indexer = Traject::Indexer::MarcIndexer.new("solr_writer.commit_on_close": true)
@@ -20,6 +24,19 @@ module CobWebIndex
     end
 
     def self.pull
+      raise WebContentError.new("No WEB_CONTENT_BASE_URL provided.") unless ENV["WEB_CONTENT_BASE_URL"]
+
+      base_url = ENV["WEB_CONTENT_BASE_URL"]
+      swagger_api = open_read("#{base_url}/swagger.json")
+      swagger_api = JSON.parse(swagger_api)
+
+      swagger_api["paths"]
+        .select { |path, api| !api["get"].nil? }
+        .keys
+        .each do |path|
+          url = "#{base_url}#{path}.json"
+          ingest(ingest_path: url)
+        end
     end
 
     def self.open_read(url)
