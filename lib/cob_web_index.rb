@@ -3,14 +3,13 @@
 require "cob_web_index/version"
 require "traject"
 require "httparty"
-require "pry"
 
 module CobWebIndex
   class WebContentError < StandardError
   end
 
   module CLI
-    def self.ingest(ingest_path: nil, ingest_string: "")
+    def self.ingest(ingest_path: nil, ingest_string: "", **opts)
       indexer = Traject::Indexer::MarcIndexer.new("solr_writer.commit_on_close": true)
       indexer.load_config_file("#{File.dirname(__FILE__)}/cob_web_index/indexer_config.rb")
 
@@ -19,7 +18,10 @@ module CobWebIndex
         ingest_string = JSON.parse(ingest_string).fetch("data").to_json
       end
 
-      indexer.writer.delete(query: "*:*")
+      if opts[:delete_collection]
+        indexer.writer.delete(query: "*:*")
+      end
+
       indexer.process(StringIO.new(ingest_string))
     end
 
@@ -29,13 +31,15 @@ module CobWebIndex
       base_url = ENV["WEB_CONTENT_BASE_URL"]
       swagger_api = open_read("#{base_url}/swagger.json")
       swagger_api = JSON.parse(swagger_api)
+      delete = TrueOnce.new
 
       swagger_api["paths"]
         .select { |path, api| !api["get"].nil? }
         .keys
         .each do |path|
           url = "#{base_url}#{path}.json"
-          ingest(ingest_path: url)
+
+          ingest(ingest_path: url, delete_collection: delete.once)
         end
     end
 
@@ -51,9 +55,21 @@ module CobWebIndex
 
     def self.ingest_fixtures
       fixtures = "#{File.dirname(__FILE__)}/../spec/fixtures/*.json"
+      delete = TrueOnce.new
 
       Dir.glob(fixtures).each do |file|
-        ingest(ingest_path: file)
+        ingest(ingest_path: file, delete_collection: delete.once)
+      end
+    end
+  end
+
+  class TrueOnce
+    def once
+      if !@once
+        @once = true
+        true
+      else
+        false
       end
     end
   end
