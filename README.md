@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/tulibraries/cob_web_index.svg?branch=master)](https://travis-ci.org/tulibraries/cob_web_index)
 [![Coverage Status](https://coveralls.io/repos/github/tulibraries/cob_web_index/badge.svg?branch=master)](https://coveralls.io/github/tulibraries/cob_web_index?branch=master)
 
-Cob Index is a repository to hold the traject configuration files and scripts associated with indexing of the library website entities.
+Cob Web Index is a repository to hold the traject configuration files and scripts associated with indexing of the library website entities.
 
 ## Installation
 
