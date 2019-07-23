@@ -28,7 +28,7 @@ class App
       elsif options["use-fixtures"]
         CobWebIndex::CLI.ingest_fixtures
       else
-        CobWebIndex::CLI.ingest(ingest_path: args[0])
+        CobWebIndex::CLI.ingest(ingest_path: args[0], delete_collection: true)
       end
     end
   end
