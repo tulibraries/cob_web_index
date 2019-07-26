@@ -35,7 +35,7 @@ to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
 }
 
-to_field "web_content_type_facet", ->(rec, acc) {
+to_field "web_content_type_t", ->(rec, acc) {
   if rec.fetch("type").match(WEBSITE_TYPES)
     acc << rec.fetch("type")
   end
