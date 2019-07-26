@@ -29,7 +29,8 @@ settings do
   provide "solr_writer.max_skipped", -1
 end
 
-WEBSITE_TYPES = /space|service|policy|collection/i
+WEBSITE_TYPES = /space|service|policy|collection|/i
+CONTENT_TYPES = /person|event|exhibition|space|service|policy|collection/i
 
 to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
@@ -60,21 +61,12 @@ to_field "web_content_type_facet", ->(rec, acc) {
 
 
 to_field "web_content_type_t", ->(rec, acc) {
-  if rec.fetch("type").match(WEBSITE_TYPES)
+  if rec.fetch("type").match(CONTENT_TYPES)
     acc << rec.fetch("type")
   end
 
   if rec.fetch("type") == "building"
     acc << "Library"
-  end
-
-
-  if rec.fetch("type") == "person"
-    acc << "People/Staff Directory"
-  end
-
-  if rec.fetch("type") == "event" || rec.fetch("type") == "exhibition"
-    acc << "Events and Exhibits"
   end
 
   if rec.fetch("type") == "finding_aid"
