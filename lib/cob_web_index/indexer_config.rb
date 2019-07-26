@@ -29,16 +29,21 @@ settings do
   provide "solr_writer.max_skipped", -1
 end
 
-WEBSITE_TYPES = /building|space|service|policy|collection/i
+WEBSITE_TYPES = /space|service|policy|collection/i
 
 to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
 }
 
-to_field "web_type_pivot_facet", ->(rec, acc) {
+to_field "web_content_type_facet", ->(rec, acc) {
   if rec.fetch("type").match(WEBSITE_TYPES)
-    acc << "Website"
+    acc << rec.fetch("type")
   end
+
+  if rec.fetch("type") == "building"
+    acc << "Library"
+  end
+
 
   if rec.fetch("type") == "person"
     acc << "People/Staff Directory"
@@ -50,28 +55,6 @@ to_field "web_type_pivot_facet", ->(rec, acc) {
 
   if rec.fetch("type") == "finding_aid"
     acc << "Finding Aids"
-  end
-}
-
-# Should we pluralize types?  How to do that for only types and not other info in facet?
-to_field "web_content_type_facet", ->(rec, acc) {
-  if rec.fetch("type").match(WEBSITE_TYPES)
-    acc << rec.fetch("type")
-  end
-
-  if rec.fetch("type") == "person"
-    specialties = rec.dig("attributes", "specialties")
-    acc.replace(specialties.reject(&:empty?).map { |specialty| specialty }) unless specialties.nil?
-  end
-
-  if rec.fetch("type") == "event" || rec.fetch("type") == "exhibition"
-    acc << rec.fetch("type")
-  end
-
-  if rec.fetch("type") == "finding_aid"
-    subjects = rec.dig("attributes", "subject")
-    acc.replace(subjects.reject(&:empty?).map { |subject| subject }) unless subjects.nil?
-
   end
 }
 
@@ -97,9 +80,6 @@ to_field "web_description_display", ->(rec, acc) {
 to_field "web_job_title_display", extract_json("$.attributes.job_title")
 to_field "web_email_address_display", extract_json("$.attributes.email_address")
 to_field "web_specialties_display", extract_json("$.attributes.specialties")
-
-#group specific
-to_field "web_group_type_display", extract_json("$.attributes.group_type")
 
 #highlight specific
 to_field "web_blurb_display", extract_json("$.attributes.blurb")
