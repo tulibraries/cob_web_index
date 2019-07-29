@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "id": "missing-book",
+      "type": "form",
+      "attributes": {
+        "label": "Missing Book Search Request",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/missing-book"
+      }
+    },
+    {
+      "id": "recall-book",
+      "type": "form",
+      "attributes": {
+        "label": "Request Recall of Books Already Checked Out",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/recall-book"
+      }
+    },
+    {
+      "id": "hsl-book-reserve",
+      "type": "form",
+      "attributes": {
+        "label": "Request book(s) for reserve-Ginsburg Health Sciences Library",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/hsl-book-reserve"
+      }
+    },
+    {
+      "id": "proxy-account",
+      "type": "form",
+      "attributes": {
+        "label": "Proxy Account",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/proxy-account"
+      }
+    },
+    {
+      "id": "ask-scrc",
+      "type": "form",
+      "attributes": {
+        "label": "Special Collections Research Center: Ask a Question",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/ask-scrc"
+      }
+    },
+    {
+      "id": "data-purchase-grants-application",
+      "type": "form",
+      "attributes": {
+        "label": "Library Data Grants",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/data-purchase-grants-application"
+      }
+    },
+    {
+      "id": "ir",
+      "type": "form",
+      "attributes": {
+        "label": "Incident Report",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/ir"
+      }
+    },
+    {
+      "id": "purchase-request",
+      "type": "form",
+      "attributes": {
+        "label": "Purchase Request",
+        "updated_at": "0000-01-01T00:00:00.000+00:00"
+      },
+      "links": {
+        "self": "https://web.qa.tul-infra.page/forms/purchase-request"
+      }
+    }
+  ]
+}
