@@ -29,8 +29,8 @@ settings do
   provide "solr_writer.max_skipped", -1
 end
 
-WEBSITE_TYPES = /space|service|policy|collection|/i
-CONTENT_TYPES = /person|event|exhibition|space|service|policy|collection/i
+WEBSITE_TYPES = /space|service|policy|collection|form/i
+CONTENT_TYPES = /person|event|exhibition|space|service|policy|collection|form/i
 
 to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
