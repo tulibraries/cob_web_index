@@ -92,6 +92,16 @@ to_field "web_description_display", ->(rec, acc) {
   end
 }, &truncate(100)
 
+
+# make sure the ful index is searchable
+to_field "web_full_description_t", ->(rec, acc) {
+  if rec.dig("attributes", "description")
+    acc << Nokogiri::HTML(rec.dig("attributes", "description")).text
+  end
+}
+
+
+
 #person specific
 to_field "web_job_title_display", extract_json("$.attributes.job_title")
 to_field "web_email_address_display", extract_json("$.attributes.email_address")
