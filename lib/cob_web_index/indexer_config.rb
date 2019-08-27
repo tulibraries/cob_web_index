@@ -36,7 +36,7 @@ to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
 }
 
-to_field "web_content_type_facet", ->(rec, acc) {
+to_field "web_content_type_facet", ->(rec, acc, context) {
   if rec.fetch("type").match(WEBSITE_TYPES)
     acc << rec.fetch("type")
   end
@@ -56,6 +56,10 @@ to_field "web_content_type_facet", ->(rec, acc) {
 
   if rec.fetch("type") == "finding_aid"
     acc << "Finding Aids"
+  end
+
+  if acc.empty?
+    context.skip!("Skipping unsopported type #{rec.fetch("type")}: #{context.output_hash["id"]}")
   end
 }
 
