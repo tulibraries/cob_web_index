@@ -37,7 +37,7 @@ RSpec.describe CobWebIndex do
     end
   end
 
-  context "An unsoported type record is indexed" do
+  context "An unsupported type record is indexed" do
     # keys MUST be strings or an error is thrown.
     let (:record) { {
       "id" => "foo",
