@@ -41,7 +41,7 @@ RSpec.describe CobWebIndex do
     # keys MUST be strings or an error is thrown.
     let (:record) { {
       "id" => "foo",
-      "type" => "unsopported",
+      "type" => "unsupported",
       "attributes" => {
         "job_title" => "worker",
         "email_address" => "foo@helloworld",
