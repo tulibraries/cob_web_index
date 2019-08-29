@@ -36,4 +36,22 @@ RSpec.describe CobWebIndex do
       expect(mapped_record["web_specialties_display"]).to eq([["foo", "bar"]])
     end
   end
+
+  context "An unsupported type record is indexed" do
+    # keys MUST be strings or an error is thrown.
+    let (:record) { {
+      "id" => "foo",
+      "type" => "unsupported",
+      "attributes" => {
+        "job_title" => "worker",
+        "email_address" => "foo@helloworld",
+        "specialties" => [ "foo", "bar" ]
+      }
+    } }
+
+
+    it "skips the record" do
+      expect(mapped_record).to be_nil
+    end
+  end
 end
