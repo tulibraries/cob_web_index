@@ -26,7 +26,7 @@ settings do
   provide "solr_writer.commit_on_close", "false"
 
   # set this to be non-negative if threshold should be enforced
-  provide "solr_writer.max_skipped", 0
+  provide "solr_writer.max_skipped", -1
 end
 
 WEBSITE_TYPES = /space|service|policy|collection|form/i
