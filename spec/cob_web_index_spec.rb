@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe CobWebIndex do
   let(:indexer) {
     indexer = Traject::Indexer::MarcIndexer.new
