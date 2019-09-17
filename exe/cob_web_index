@@ -20,15 +20,26 @@ class App
     c.desc "Ingest files from gems fixtures (useful for development)"
     c.switch ["use-fixtures"], default_value: false
 
-    c.desc "Ingest files into SOLR_URL using the web content traject config"
+    c.desc "Delete docs before ingesting new ones"
+    c.switch ["delete"], default_value: false
+
+  c "Delete docs before ingesting new ones"
+    c.switch ["delete"], default_value: false
+desc "Ingest files into SOLR_URL using the web content traject config"
     c.action do |global_options, options, args|
 
+      opts = {}
+
+      if options[:delete]
+        opts.merge!(delete: true)
+      end
+
       if options["use-fixtures"]
-        CobWebIndex::CLI.ingest_fixtures
+        CobWebIndex::CLI.ingest_fixtures(opts)
       elsif args.empty?
-        CobWebIndex::CLI.pull
+        CobWebIndex::CLI.pull(opts)
       else
-        CobWebIndex::CLI.ingest(ingest_path: args[0], delete_collection: true)
+        CobWebIndex::CLI.ingest(opts.merge(ingest_path: args[0], delete_collection: true))
       end
     end
   end
