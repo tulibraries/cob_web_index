@@ -18,14 +18,14 @@ module CobWebIndex
         ingest_string = JSON.parse(ingest_string).fetch("data").to_json
       end
 
-      if opts[:delete_collection]
+      if opts[:delete_collection] && opts[:delete]
         indexer.writer.delete(query: "*:*")
       end
 
       indexer.process(StringIO.new(ingest_string))
     end
 
-    def self.pull
+    def self.pull(opts={})
       raise WebContentError.new("No WEB_CONTENT_BASE_URL provided.") unless ENV["WEB_CONTENT_BASE_URL"]
 
       base_url = ENV["WEB_CONTENT_BASE_URL"]
@@ -39,7 +39,7 @@ module CobWebIndex
         .each do |path|
           url = "#{base_url}#{path}.json"
 
-          ingest(ingest_path: url, delete_collection: delete.once)
+          ingest(opts.merge(ingest_path: url, delete_collection: delete.once))
         end
     end
 
@@ -53,12 +53,12 @@ module CobWebIndex
       end
     end
 
-    def self.ingest_fixtures
+    def self.ingest_fixtures(opts={})
       fixtures = "#{File.dirname(__FILE__)}/../spec/fixtures/*.json"
       delete = TrueOnce.new
 
       Dir.glob(fixtures).each do |file|
-        ingest(ingest_path: file, delete_collection: delete.once)
+        ingest(opts.merge(ingest_path: file, delete_collection: delete.once))
       end
     end
   end
