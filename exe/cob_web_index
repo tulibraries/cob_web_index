@@ -23,9 +23,9 @@ class App
     c.desc "Delete docs before ingesting new ones"
     c.switch ["delete"], default_value: false
 
-  c "Delete docs before ingesting new ones"
+    c "Delete docs before ingesting new ones"
     c.switch ["delete"], default_value: false
-desc "Ingest files into SOLR_URL using the web content traject config"
+    desc "Ingest files into SOLR_URL using the web content traject config"
     c.action do |global_options, options, args|
 
       opts = {}

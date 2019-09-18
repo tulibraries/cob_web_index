@@ -25,7 +25,7 @@ module CobWebIndex
       indexer.process(StringIO.new(ingest_string))
     end
 
-    def self.pull(opts={})
+    def self.pull(opts = {})
       raise WebContentError.new("No WEB_CONTENT_BASE_URL provided.") unless ENV["WEB_CONTENT_BASE_URL"]
 
       base_url = ENV["WEB_CONTENT_BASE_URL"]
@@ -53,7 +53,7 @@ module CobWebIndex
       end
     end
 
-    def self.ingest_fixtures(opts={})
+    def self.ingest_fixtures(opts = {})
       fixtures = "#{File.dirname(__FILE__)}/../spec/fixtures/*.json"
       delete = TrueOnce.new
 
