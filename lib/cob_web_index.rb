@@ -44,7 +44,7 @@ module CobWebIndex
     end
 
     def self.open_read(url)
-      if ENV["WEB_CONTENT_BASIC_AUTH_USER"] &&  ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
+      if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         user = ENV["WEB_CONTENT_BASIC_AUTH_USER"]
         password = ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         open(url, http_basic_authentication: [user, password]).read
