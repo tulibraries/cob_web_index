@@ -27,6 +27,11 @@ settings do
 
   # set this to be non-negative if threshold should be enforced
   provide "solr_writer.max_skipped", 0
+
+  if ENV["SOLR_AUTH_USER"] && ENV["SOLR_AUTH_PASSWORD"]
+    provide "solr_json_writer.basic_auth_user", ENV["SOLR_AUTH_USER"]
+    provide "solr_json_writer.basic_auth_password", ENV["SOLR_AUTH_PASSWORD"]
+  end
 end
 
 WEBSITE_TYPES = /space|service|policy|collection|form/i
