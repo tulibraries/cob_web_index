@@ -84,6 +84,7 @@ to_field "web_content_type_t", ->(rec, acc) {
 }
 
 to_field "web_title_display", extract_json("$.attributes.label")
+to_field "title_sort", extract_json("$.attributes.label")
 
 # Same issue as descriptions.  Should only appear for people, not buildings.
 to_field "web_phone_number_display", extract_json("$.attributes.phone_number")
