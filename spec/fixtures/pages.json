@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "2",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Access Services",
         "updated_at": "2019-05-30T10:33:41.133-04:00",
@@ -16,7 +16,7 @@
     },
     {
       "id": "3",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "TULUP Diversity Statement",
         "updated_at": "2019-05-30T10:33:45.860-04:00",
@@ -30,7 +30,7 @@
     },
     {
       "id": "4",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Employment Opportunities",
         "updated_at": "2019-05-30T10:33:54.480-04:00",
@@ -44,7 +44,7 @@
     },
     {
       "id": "5",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Employment Opportunities for Temple Students",
         "updated_at": "2019-05-30T10:34:00.405-04:00",
@@ -58,7 +58,7 @@
     },
     {
       "id": "6",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Temple University Library System Summary: 2017-2018",
         "updated_at": "2019-05-30T10:34:17.209-04:00",
@@ -72,7 +72,7 @@
     },
     {
       "id": "7",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Temple University Libraries Annual Report",
         "updated_at": "2019-05-30T10:34:27.278-04:00",
@@ -86,7 +86,7 @@
     },
     {
       "id": "9",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Mission & key functions",
         "updated_at": "2019-05-30T10:34:38.554-04:00",
@@ -100,7 +100,7 @@
     },
     {
       "id": "10",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Operating principles",
         "updated_at": "2019-05-30T10:34:43.057-04:00",
@@ -114,7 +114,7 @@
     },
     {
       "id": "11",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Strategic Actions",
         "updated_at": "2019-05-30T10:35:00.426-04:00",
@@ -128,7 +128,7 @@
     },
     {
       "id": "12",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Donate books & other gifts-in-kind",
         "updated_at": "2019-05-30T10:35:05.218-04:00",
@@ -142,7 +142,7 @@
     },
     {
       "id": "8",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Speaking Volumes - Spring/Summer 2018",
         "updated_at": "2019-07-09T15:08:47.997-04:00",
@@ -156,7 +156,7 @@
     },
     {
       "id": "14",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Health Sciences Resources and Media",
         "updated_at": "2019-07-17T11:33:40.817-04:00",
@@ -170,7 +170,7 @@
     },
     {
       "id": "13",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Email",
         "updated_at": "2019-07-15T15:38:12.965-04:00",
@@ -184,7 +184,7 @@
     },
     {
       "id": "1",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Welcome to Temple University Libraries",
         "updated_at": "2019-07-17T13:51:57.863-04:00",
@@ -198,7 +198,7 @@
     },
     {
       "id": "18",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Connect with us on social media",
         "updated_at": "2019-07-08T11:49:19.819-04:00",
@@ -212,7 +212,7 @@
     },
     {
       "id": "20",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Faculty fellow recipients",
         "updated_at": "2019-07-14T15:28:15.952-04:00",
@@ -226,7 +226,7 @@
     },
     {
       "id": "21",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "SCRC homepage",
         "updated_at": "2019-07-15T12:48:30.999-04:00",
@@ -240,7 +240,7 @@
     },
     {
       "id": "22",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Graduate fellows recipients",
         "updated_at": "2019-07-15T15:29:13.322-04:00",
@@ -254,7 +254,7 @@
     },
     {
       "id": "23",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Digital scholarship recipients",
         "updated_at": "2019-07-15T15:42:06.918-04:00",
@@ -268,7 +268,7 @@
     },
     {
       "id": "35",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Selected publications of Charles L. Blockson",
         "updated_at": "2019-07-18T08:36:08.256-04:00",
@@ -282,7 +282,7 @@
     },
     {
       "id": "24",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "DSC homepage",
         "updated_at": "2019-07-15T16:21:23.885-04:00",
@@ -296,7 +296,7 @@
     },
     {
       "id": "36",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Selected African American internet resources",
         "updated_at": "2019-07-18T08:38:46.037-04:00",
@@ -310,7 +310,7 @@
     },
     {
       "id": "25",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Home",
         "updated_at": "2019-07-16T08:40:41.447-04:00",
@@ -324,7 +324,7 @@
     },
     {
       "id": "26",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Dean's welcome",
         "updated_at": "2019-07-16T08:42:57.310-04:00",
@@ -338,7 +338,7 @@
     },
     {
       "id": "27",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "About Charles Library",
         "updated_at": "2019-07-16T08:44:34.338-04:00",
@@ -352,7 +352,7 @@
     },
     {
       "id": "28",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Floorplans",
         "updated_at": "2019-07-16T08:46:00.116-04:00",
@@ -366,7 +366,7 @@
     },
     {
       "id": "29",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Gallery",
         "updated_at": "2019-07-16T08:49:07.733-04:00",
@@ -380,7 +380,7 @@
     },
     {
       "id": "30",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Giving",
         "updated_at": "2019-07-16T08:57:41.397-04:00",
@@ -394,7 +394,7 @@
     },
     {
       "id": "31",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Temple University Libraries History",
         "updated_at": "2019-07-18T08:24:37.910-04:00",
@@ -408,7 +408,7 @@
     },
     {
       "id": "19",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Frequently called numbers",
         "updated_at": "2019-07-17T10:20:46.674-04:00",
@@ -422,7 +422,7 @@
     },
     {
       "id": "16",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Databases by subject",
         "updated_at": "2019-07-17T15:19:42.260-04:00",
@@ -436,7 +436,7 @@
     },
     {
       "id": "34",
-      "type": "page",
+      "type": "webpage",
       "attributes": {
         "label": "Resources on African-American heritage in Philadelphia",
         "updated_at": "2019-07-18T08:33:19.656-04:00",
