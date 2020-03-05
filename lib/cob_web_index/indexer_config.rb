@@ -50,6 +50,9 @@ to_field "web_content_type_facet", ->(rec, acc, context) {
     acc << "Library"
   end
 
+  if rec.fetch("type") == "webpage"
+    acc << "Pages"
+  end
 
   if rec.fetch("type") == "person"
     acc << "People/Staff Directory"
