@@ -56,4 +56,17 @@ RSpec.describe CobWebIndex do
       expect(mapped_record).to be_nil
     end
   end
+
+  skip "A a null dataset is passed in" do
+    it "replaces the null dataset with an empty array" do
+      allow(Traject::Indexer::MarcIndexer).to receive(:new).and_return(indexer)
+      allow(indexer).to receive_messages(load_config_file: "", process: "")
+      expect(indexer).to receive(:process).with(StringIO.new({ "data": [] }.to_json))
+    end
+
+    after(:example) do
+      null_data_file = StringIO.new({ "data": nil }.to_json)
+      CobWebIndex::CLI.ingest(ingest_path: null_data_file)
+    end
+  end
 end

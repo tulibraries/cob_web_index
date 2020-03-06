@@ -16,7 +16,15 @@ module CobWebIndex
         if ingest_path
           logger.info "Ingesting #{ingest_path}"
           ingest_string = CobWebIndex::CLI.open_read(ingest_path)
-          ingest_string = JSON.parse(ingest_string).fetch("data").to_json
+          data = JSON.parse(ingest_string).fetch("data")
+
+          # Protect agains trying to ingest nil data
+          if data.nil? || data.empty?
+            logger.warn "Trying to ingest nil data at: #{ingest_path}"
+            data = []
+          end
+
+          ingest_string = data.to_json
         end
 
         if opts[:delete_collection] && opts[:delete]
