@@ -10,29 +10,30 @@ module CobWebIndex
 
   module CLI
     def self.ingest(ingest_path: nil, ingest_string: "", **opts)
-      Traject::Indexer::MarcIndexer.new("solr_writer.commit_on_close": true) do
-        load_config_file("#{File.dirname(__FILE__)}/cob_web_index/indexer_config.rb")
+      indexer = Traject::Indexer::MarcIndexer.new("solr_writer.commit_on_close": true)
+      indexer.load_config_file("#{File.dirname(__FILE__)}/cob_web_index/indexer_config.rb")
+      logger = indexer.logger
 
-        if ingest_path
-          logger.info "Ingesting #{ingest_path}"
-          ingest_string = CobWebIndex::CLI.open_read(ingest_path)
-          data = JSON.parse(ingest_string).fetch("data")
+      if ingest_path
+        logger.info "Ingesting #{ingest_path}"
+        ingest_string = CobWebIndex::CLI.open_read(ingest_path)
+        data = JSON.parse(ingest_string).fetch("data")
 
-          # Protect agains trying to ingest nil data
-          if data.nil? || data.empty?
-            logger.warn "Trying to ingest nil data at: #{ingest_path}"
-            data = []
-          end
-
-          ingest_string = data.to_json
+        # Protect against trying to ingest nil data
+        if data.nil? || data.empty?
+          logger.warn "Trying to ingest nil data at: #{ingest_path}"
+          data = []
         end
 
-        if opts[:delete_collection] && opts[:delete]
-          indexer.writer.delete(query: "*:*")
-        end
-
-        process(StringIO.new(ingest_string))
+        ingest_string = data.to_json
       end
+
+      if opts[:delete_collection] && opts[:delete]
+        indexer.writer.delete(query: "*:*")
+      end
+
+
+      indexer.process(StringIO.new(ingest_string))
     end
 
     def self.pull(opts = {})
