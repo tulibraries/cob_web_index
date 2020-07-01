@@ -1,6 +1,6 @@
 # CobWebIndex
-[![Build Status](https://travis-ci.org/tulibraries/cob_web_index.svg?branch=master)](https://travis-ci.org/tulibraries/cob_web_index)
-[![Coverage Status](https://coveralls.io/repos/github/tulibraries/cob_web_index/badge.svg?branch=master)](https://coveralls.io/github/tulibraries/cob_web_index?branch=master)
+[![Build Status](https://travis-ci.org/tulibraries/cob_web_index.svg?branch=main)](https://travis-ci.org/tulibraries/cob_web_index)
+[![Coverage Status](https://coveralls.io/repos/github/tulibraries/cob_web_index/badge.svg?branch=main)](https://coveralls.io/github/tulibraries/cob_web_index?branch=main)
 
 Cob Web Index is a repository to hold the traject configuration files and scripts associated with indexing of the library website entities.
 
@@ -30,7 +30,7 @@ cob_web_index ingest $path_to_file
 
 `$path_to_file` can also be a URL.
 
-Note also that `$path_to_file` is an optional argument. If not provided then by default ingest will attempt to download the latest website dataset from location base set at WEB_CONTENT_BASE_URL and import that. 
+Note also that `$path_to_file` is an optional argument. If not provided then by default ingest will attempt to download the latest website dataset from location base set at WEB_CONTENT_BASE_URL and import that.
 
 ### Basic Auth Usage
 
@@ -57,4 +57,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CobWebIndex project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tulibraries/cob_web_index/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CobWebIndex project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tulibraries/cob_web_index/blob/main/CODE_OF_CONDUCT.md).
