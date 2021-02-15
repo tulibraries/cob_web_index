@@ -43,7 +43,7 @@ GEM
       ffi (>= 1.0.0)
       rake
     formatador (0.2.5)
-    gli (2.19.2)
+    gli (2.20.0)
     guard (2.16.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
