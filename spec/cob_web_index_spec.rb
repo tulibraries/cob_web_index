@@ -65,7 +65,7 @@ RSpec.describe CobWebIndex do
       allow(Traject::Indexer::MarcIndexer).to receive(:new).and_return(indexer)
       allow(indexer).to receive_messages(load_config_file: "", process: "")
       allow(io).to receive_messages(read: null_data_file)
-      allow(CobWebIndex::CLI).to receive_messages(open: io)
+      allow(URI).to receive_messages(open: io)
       allow(StringIO).to receive(:new)
 
       expect(StringIO).to receive(:new).with("[]")
