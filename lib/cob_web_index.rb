@@ -58,9 +58,9 @@ module CobWebIndex
       if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         user = ENV["WEB_CONTENT_BASIC_AUTH_USER"]
         password = ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
-        open(url, http_basic_authentication: [user, password]).read
+        URI.open(url, http_basic_authentication: [user, password]).read
       else
-        open(url).read
+        URI.open(url).read
       end
     end
 
