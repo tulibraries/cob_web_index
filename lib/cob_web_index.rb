@@ -3,6 +3,7 @@
 require "cob_web_index/version"
 require "traject"
 require "httparty"
+require "pry"
 
 module CobWebIndex
   class WebContentError < StandardError
@@ -58,10 +59,11 @@ module CobWebIndex
       if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         user = ENV["WEB_CONTENT_BASIC_AUTH_USER"]
         password = ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
-        URI.open(url, http_basic_authentication: [user, password]).read
+        uri = URI.open(url, { http_basic_authentication: [user, password], read_timeout: 180 }).read
       else
-        URI.open(url).read
+        uri = URI.open(url).read
       end
+      uri
     end
 
     def self.ingest_fixtures(opts = {})
