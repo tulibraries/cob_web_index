@@ -56,14 +56,12 @@ module CobWebIndex
     end
 
     def self.open_read(url)
+      options = {}
       if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
-        user = ENV["WEB_CONTENT_BASIC_AUTH_USER"]
-        password = ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
-        uri = URI.open(url, { http_basic_authentication: [user, password], read_timeout: 180 }).read
-      else
-        uri = URI.open(url).read
+        options = { http_basic_authentication: [ENV["WEB_CONTENT_BASIC_AUTH_USER"], ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]] }
       end
-      uri
+      options[:read_timeout] = ENV["WEB_CONTENT_READ_TIMEOUT"].to_i if ENV["WEB_CONTENT_READ_TIMEOUT"]
+      URI.open(url, options).read
     end
 
     def self.ingest_fixtures(opts = {})
