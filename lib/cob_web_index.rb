@@ -3,7 +3,6 @@
 require "cob_web_index/version"
 require "traject"
 require "httparty"
-require "pry"
 
 module CobWebIndex
   class WebContentError < StandardError
