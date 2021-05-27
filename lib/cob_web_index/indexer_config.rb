@@ -77,12 +77,23 @@ to_field "web_content_type_t", ->(rec, acc) {
     acc << rec.fetch("type")
   end
 
-  if rec.fetch("type") == "building"
-    acc << "Library"
-  end
-
   if rec.fetch("type") == "finding_aid"
     acc << "Finding Aids"
+  end
+}
+
+to_field "web_content_type_boost_i", ->(rec, acc) {
+  if rec.fetch("type") == "event"
+    acc << 1
+
+  elsif rec.fetch("type") == "finding_aid"
+    acc << 2
+
+  elsif rec.fetch("type") == "person"
+    acc << 4
+
+  else
+    acc << 3
   end
 }
 
