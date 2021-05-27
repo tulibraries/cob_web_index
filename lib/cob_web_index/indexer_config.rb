@@ -84,6 +84,8 @@ to_field "web_content_type_t", ->(rec, acc) {
   if rec.fetch("type") == "finding_aid"
     acc << "Finding Aids"
   end
+
+  acc.flatten
 }
 
 to_field "web_title_display", extract_json("$.attributes.label")
