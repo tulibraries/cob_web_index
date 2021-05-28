@@ -71,7 +71,6 @@ to_field "web_content_type_facet", ->(rec, acc, context) {
   end
 }
 
-
 to_field "web_content_type_t", ->(rec, acc) {
   if rec.fetch("type").match(CONTENT_TYPES)
     acc << rec.fetch("type")
@@ -121,15 +120,12 @@ to_field "web_description_display", ->(rec, acc) {
   end
 }, &truncate(100)
 
-
-# make sure the ful index is searchable
+# make sure the full index is searchable
 to_field "web_full_description_t", ->(rec, acc) {
   if rec.dig("attributes", "description")
     acc << Nokogiri::HTML(rec.dig("attributes", "description")).text
   end
 }
-
-
 
 #person specific
 to_field "web_job_title_display", extract_json("$.attributes.job_title")
@@ -141,10 +137,6 @@ to_field "web_blurb_display", extract_json("$.attributes.blurb")
 to_field "web_tags_display", extract_json("$.attributes.tags")
 to_field "web_link_display", extract_json("$.attributes.link")
 
-# we need update times from the JSON responses.
-# Ticketed in MAN-242
-# It seems that this work has been done, not sure if anything here needs
-# to be altered in order for it to work
 each_record do |record, context|
   context.output_hash["record_update_date"] = [ Time.now.to_s ]
 end
