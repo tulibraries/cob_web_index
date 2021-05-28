@@ -77,6 +77,10 @@ to_field "web_content_type_t", ->(rec, acc) {
     acc << rec.fetch("type")
   end
 
+  if rec.fetch("type") == "building"
+    acc << "Library"
+  end
+
   if rec.fetch("type") == "finding_aid"
     acc << "Finding Aids"
   end
