@@ -35,7 +35,7 @@ settings do
 end
 
 WEBSITE_TYPES = /space|service|policy|collection|form/i
-CONTENT_TYPES = /blog|webpage|person|event|exhibition|space|service|policy|collection|form/i
+CONTENT_TYPES = /blog|webpage|highlight|person|event|exhibition|space|service|policy|collection|form/i
 
 to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
