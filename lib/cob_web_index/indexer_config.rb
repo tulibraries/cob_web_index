@@ -66,7 +66,7 @@ to_field "web_content_type_facet", ->(rec, acc, context) {
     acc << "Finding Aids"
   end
 
-  if acc.empty?
+  if acc.empty? && !rec.fetch("type").match(CONTENT_TYPES)
     context.skip!("Skipping unsupported type #{rec.fetch("type")}: #{context.output_hash["id"]}")
   end
 }

@@ -51,9 +51,20 @@ RSpec.describe CobWebIndex do
       }
     } }
 
-
     it "skips the record" do
       expect(mapped_record).to be_nil
+    end
+  end
+
+  context "A record with a CONTENT_TYPE is indexed" do
+    # keys MUST be strings or an error is thrown.
+    let (:record) { {
+      "id" => "foo-blog",
+      "type" => "blog"
+    } }
+
+    it "ingests the record" do
+      expect(mapped_record).to include({ "id" => ["blog_foo-blog"] })
     end
   end
 
