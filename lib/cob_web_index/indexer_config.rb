@@ -90,9 +90,6 @@ to_field "web_content_type_boost_i", ->(rec, acc) {
   if rec.fetch("type") == "event" || rec.fetch("type") == "highlight"
     acc << 1
 
-  elsif rec.fetch("type") == "building"
-     acc << 3
-
   elsif rec.fetch("type") == "finding_aid"
     acc << 2
 
