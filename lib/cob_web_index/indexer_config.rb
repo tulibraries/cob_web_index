@@ -35,7 +35,7 @@ settings do
 end
 
 WEBSITE_TYPES = /space|service|policy|collection|form/i
-CONTENT_TYPES = /person|event|exhibition|space|service|policy|collection|form/i
+CONTENT_TYPES = /blog|webpage|person|event|exhibition|space|service|policy|collection|form/i
 
 to_field "id", ->(rec, acc) {
   acc << "#{rec['type']}_#{rec['id']}"
@@ -83,8 +83,11 @@ to_field "web_content_type_t", ->(rec, acc) {
 }
 
 to_field "web_content_type_boost_i", ->(rec, acc) {
-  if rec.fetch("type") == "event"
+  if rec.fetch("type") == "event" || rec.fetch("type") == "highlight"
     acc << 1
+
+  elsif rec.fetch("type") == "building"
+     acc << 3
 
   elsif rec.fetch("type") == "finding_aid"
     acc << 2
@@ -94,6 +97,7 @@ to_field "web_content_type_boost_i", ->(rec, acc) {
 
   else
     acc << 3
+
   end
 }
 
