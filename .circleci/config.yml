@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@0.1.2
+  coveralls: coveralls/coveralls@1.0.6
 
 jobs:
   build:
@@ -23,3 +24,6 @@ jobs:
       - run:
           name: test
           command: bundle exec rake
+
+      - coveralls/upload:
+          path_to_lcov: ./coverage/lcov/project.lcov
