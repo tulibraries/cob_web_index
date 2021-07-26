@@ -11,7 +11,7 @@ group :debug do
   gem "ruby-debug", platform: "jruby"
 
   gem "binding_of_caller", "~> 1.0", platform: "mri"
-  gem "guard", "~> 2.17", platform: "mri"
+  gem "guard", "~> 2.18", platform: "mri"
   gem "guard-rspec", "~> 4.7", platform: "mri"
   gem "pry", "~> 0.11", platform: "mri"
   gem "pry-byebug", "~> 3.5", platform: "mri"
