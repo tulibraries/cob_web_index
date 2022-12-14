@@ -33,12 +33,13 @@ class App
       end
 
       if options["use-fixtures"]
-        CobWebIndex::CLI.ingest_fixtures(opts)
+        opts
       elsif args.empty?
-        CobWebIndex::CLI.pull(opts)
+        CobWebIndex::CLI.pull(**opts)
       else
-        CobWebIndex::CLI.ingest(opts.merge(ingest_path: args[0], delete_collection: true))
+        opts.merge(ingest_path: args[0], delete_collection: true)
       end
+      CobWebIndex::CLI.ingest(**opts)
     end
   end
 
