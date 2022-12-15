@@ -51,7 +51,7 @@ module CobWebIndex
         .each do |path|
           url = "#{base_url}#{path}.json"
 
-          ingest(opts.merge(ingest_path: url, delete_collection: delete.once))
+          ingest(**opts.merge(ingest_path: url, delete_collection: delete.once))
         end
     end
 
@@ -70,7 +70,7 @@ module CobWebIndex
       delete = TrueOnce.new
 
       Dir.glob(fixtures).each do |file|
-        ingest(opts.merge(ingest_path: file, delete_collection: delete.once))
+        ingest(**opts.merge(ingest_path: file, delete_collection: delete.once))
       end
     end
   end
