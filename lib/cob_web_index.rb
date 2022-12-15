@@ -17,6 +17,7 @@ module CobWebIndex
       if ingest_path
         logger.info "Ingesting #{ingest_path}"
         ingest_string = CobWebIndex::CLI.open_read(ingest_path)
+
         data = JSON.parse(ingest_string).fetch("data")
 
         # Protect against trying to ingest nil data
@@ -60,7 +61,8 @@ module CobWebIndex
         options = { http_basic_authentication: [ENV["WEB_CONTENT_BASIC_AUTH_USER"], ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]] }
       end
       options[:read_timeout] = ENV["WEB_CONTENT_READ_TIMEOUT"].to_i if ENV["WEB_CONTENT_READ_TIMEOUT"]
-      URI.open(url, options).read
+      file = options.empty? ? URI.open(url) : URI.open(url, options)
+      file.read
     end
 
     def self.ingest_fixtures(opts = {})
