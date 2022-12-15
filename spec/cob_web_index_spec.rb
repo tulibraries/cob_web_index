@@ -96,7 +96,7 @@ RSpec.describe CobWebIndex do
     }
 
     it "receives no options" do
-      expect(URI).to receive(:open).with(uri, {})
+      expect(URI).to receive(:open).with(uri)
       CobWebIndex::CLI.open_read(uri)
     end
 
