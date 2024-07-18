@@ -3,6 +3,7 @@
 require "cob_web_index/version"
 require "traject"
 require "httparty"
+require "pry"
 
 module CobWebIndex
   class WebContentError < StandardError
@@ -60,7 +61,11 @@ module CobWebIndex
       if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         options = { http_basic_authentication: [ENV["WEB_CONTENT_BASIC_AUTH_USER"], ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]] }
       end
-      options[:read_timeout] = ENV["WEB_CONTENT_READ_TIMEOUT"].to_i if ENV["WEB_CONTENT_READ_TIMEOUT"]
+
+      if ENV["WEB_CONTENT_READ_TIMEOUT"]
+        options.merge!({ read_timeout: ENV["WEB_CONTENT_READ_TIMEOUT"] })
+      end
+
       file = options.empty? ? URI.open(url) : URI.open(url, options)
       file.read
     end

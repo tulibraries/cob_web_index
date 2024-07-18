@@ -88,7 +88,7 @@ RSpec.describe CobWebIndex do
     let(:uri) { "https://example.com/documents.json" }
     let(:username) { "user" }
     let(:password) { "mypassword" }
-    let(:read_timeout) { 12345 }
+    let(:default_timeout) { "12345" }
 
     before(:each) {
       ENV.clear
@@ -109,9 +109,9 @@ RSpec.describe CobWebIndex do
     end
 
     it "handles read_timeout options" do
-      ENV["WEB_CONTENT_READ_TIMEOUT"] = read_timeout.to_s
+      ENV["WEB_CONTENT_READ_TIMEOUT"] = default_timeout.to_s
 
-      expect(URI).to receive(:open).with(uri, { read_timeout: read_timeout })
+      expect(URI).to receive(:open).with(uri, { read_timeout: default_timeout })
       CobWebIndex::CLI.open_read(uri)
     end
   end
