@@ -95,11 +95,6 @@ RSpec.describe CobWebIndex do
       allow(URI).to receive_message_chain(:open, :read)
     }
 
-    xit "receives no options" do
-      expect(URI).to receive(:open).with(uri)
-      CobWebIndex::CLI.open_read(uri)
-    end
-
     it "handles authentication options" do
       ENV["WEB_CONTENT_BASIC_AUTH_USER"] = username
       ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"] = password
