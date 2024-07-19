@@ -56,11 +56,12 @@ module CobWebIndex
     end
 
     def self.open_read(url)
-      options = { read_timeout: 500 }
+      options = {}
       if ENV["WEB_CONTENT_BASIC_AUTH_USER"] && ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]
         options.merge!({ http_basic_authentication: [ENV["WEB_CONTENT_BASIC_AUTH_USER"], ENV["WEB_CONTENT_BASIC_AUTH_PASSWORD"]] })
       end
 
+      options[:read_timeout] = ENV["WEB_CONTENT_READ_TIMEOUT"].to_i if ENV["WEB_CONTENT_READ_TIMEOUT"]
       file = options.empty? ? URI.open(url) : URI.open(url, options)
       file.read
     end
