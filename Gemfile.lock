@@ -210,7 +210,6 @@ DEPENDENCIES
   cob_web_index!
   guard (~> 2.19)
   guard-rspec (~> 4.7)
-  nokogiri (= 1.18.1)
   pry (~> 0.14)
   pry-byebug (~> 3.10)
   rake (~> 13.0)

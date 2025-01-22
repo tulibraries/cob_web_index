@@ -6,7 +6,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # Specify your gem's dependencies in cob_web_index.gemspec
 gemspec
-gem "nokogiri", "1.18.1"
 
 group :debug do
   gem "binding_of_caller", "~> 1.0", platform: "mri"
