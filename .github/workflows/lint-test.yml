@@ -1,11 +1,18 @@
-name: CI
+name: "Lint and Test"
 
 on:
   push:
-    branches: [ main ]
+    branches-ignore:
+      - main
   pull_request:
+    types: [ opened, synchronize, reopened ]
     branches: [ main ]
+  workflow_dispatch: {}
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
 jobs:
   lint:
     runs-on: ubuntu-latest
