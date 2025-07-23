@@ -26,4 +26,4 @@ jobs:
           command: bundle exec rake
 
       - coveralls/upload:
-          coverage_file: ./coverage/lcov/project.lcov
+          coverage_file: ./coverage/lcov/cob_web_index.lcov
