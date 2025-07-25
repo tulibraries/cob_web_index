@@ -4,9 +4,6 @@ on:
   push:
     branches-ignore:
       - main
-  pull_request:
-    types: [ opened, reopened ]
-    branches: [ main ]
   workflow_dispatch: {}
 
 concurrency:
@@ -52,4 +49,4 @@ jobs:
           bundler-cache: true
 
       - name: Test
-        run: bundle exec rake
+        run: bundle exec rspec spec
