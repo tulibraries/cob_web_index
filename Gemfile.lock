@@ -80,7 +80,7 @@ GEM
     http-cookie (1.0.8)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    httparty (0.24.0)
+    httparty (0.24.2)
       csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
@@ -109,7 +109,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.4)
     multi_json (1.15.0)
-    multi_xml (0.8.0)
+    multi_xml (0.8.1)
       bigdecimal (>= 3.1, < 5)
     mutex_m (0.3.0)
     nenv (0.3.0)
@@ -222,8 +222,8 @@ DEPENDENCIES
   cob_web_index!
   guard (~> 2.19)
   guard-rspec (~> 4.7)
-  pry (~> 0.15)
-  pry-byebug (~> 3.10)
+  pry (~> 0.15, >= 0)
+  pry-byebug (~> 3.10, >= 0)
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.5)
