@@ -12,6 +12,6 @@ group :debug do
   gem "guard", "~> 2.19", platform: "mri"
   gem "guard-rspec", "~> 4.7", platform: "mri"
   gem "pry", "~> 0.15", platform: "mri"
-  gem "pry-byebug", "~> 3.10", platform: "mri"
+  gem "pry-byebug", "~> 3.12", platform: "mri"
   gem "ruby-debug", platform: "jruby"
 end
