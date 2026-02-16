@@ -8,7 +8,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 group :debug do
-  gem "binding_of_caller", "~> 1.0", platform: "mri"
+  gem "binding_of_caller", "~> 2.0", platform: "mri"
   gem "guard", "~> 2.20", platform: "mri"
   gem "guard-rspec", "~> 4.7", platform: "mri"
   gem "pry", "~> 0.15", platform: "mri"
