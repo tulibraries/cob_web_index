@@ -14,4 +14,5 @@ group :debug do
   gem "pry", "~> 0.15", platform: "mri"
   gem "pry-byebug", "~> 3.10", platform: "mri"
   gem "ruby-debug", platform: "jruby"
+  gem "json", "~> 2.21"
 end
