@@ -82,7 +82,7 @@ GEM
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
-    json (2.21.2)
+    json (3.0.2)
     jsonpath (1.1.5)
       multi_json
     language_server-protocol (3.17.0.6)
@@ -220,9 +220,9 @@ DEPENDENCIES
   cob_web_index!
   guard (~> 2.20)
   guard-rspec (~> 4.7)
-  json (~> 2.21)
-  pry (~> 0.15)
-  pry-byebug (~> 3.10)
+  json (~> 3.0)
+  pry (~> 0.15, >= 0)
+  pry-byebug (~> 3.10, >= 0)
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.5)
