@@ -88,7 +88,7 @@ GEM
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     io-console (0.9.4)
-    json (2.21.2)
+    json (3.1.0)
     jsonpath (1.1.5)
       multi_json
     language_server-protocol (3.17.0.6)
@@ -236,7 +236,7 @@ DEPENDENCIES
   cob_web_index!
   guard (~> 2.20)
   guard-rspec (~> 4.7)
-  json (~> 2.21)
+  json (~> 3.1)
   pry (~> 0.16, >= 0)
   pry-byebug (~> 3.10, >= 0)
   rake (~> 13.0)
@@ -286,7 +286,7 @@ CHECKSUMS
   httpx (1.8.4) sha256=1782ecde81eb4e961ad8735ec74a6fec8e60efeaa4592c6b2f55d72e19aaeca8
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   io-console (0.9.4) sha256=a403304f32928ee85e56d457b4612ca43f2703b561a3258844992bd24085fbb1
-  json (2.21.2) sha256=1f1d3b7cf2b3ba1a69beca0bb6db13d5438b80bff3cd54cdaaa620b9b07c1c6a
+  json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   jsonpath (1.1.5) sha256=29f70467193a2dc93ab864ec3d3326d54267961acc623f487340eb9c34931dbe
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
